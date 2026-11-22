@@ -3,8 +3,8 @@
 End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
 
 <p align="center">
-  <img src="https://github.com/user-<img width="407" height="229" alt="image" src="https://github.com/user-attachments/assets/b72a871e-5ae8-44f1-b9cf-43a50c32a9d4" />
-attachments/assets/75b553ce-48ae-49b4-adf5-df41c3abd2c9" alt="Power BI dashboard: Customer Shopping Behaviour Analysis" width="700">
+  <img src=<img width="407" height="229" alt="image" src="https://github.com/user-attachments/assets/d0cfc8d1-5e3c-4e2d-a8a1-dc80ff0f1721" />
+="Power BI dashboard: Customer Shopping Behaviour Analysis" width="700">
 </p>
 
 ## Problem and Goal
