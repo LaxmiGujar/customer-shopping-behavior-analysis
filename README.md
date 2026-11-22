@@ -1,97 +1,114 @@
-Customer Shopping Behavior Analysis
+# Customer Shopping Behavior Analysis
 
-End-to-end analysis of 3,900 retail customers using Python, SQL (PostgreSQL) and Power BI. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
+End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
+
 <p align="center">
-  <img src="<img width="332" height="194" alt="Dashbord1" src="https://github.com/user-attachments/assets/75b553ce-48ae-49b4-adf5-df41c3abd2c9" />
-" alt="Power BI dashboard" width="700">
+  <img src="https://github.com/user-attachments/assets/75b553ce-48ae-49b4-adf5-df41c3abd2c9" alt="Power BI dashboard: Customer Shopping Behaviour Analysis" width="700">
 </p>
-Problem and Goal
+
+## Problem and Goal
 
 A retail store wants to understand who its customers are, what drives revenue, and whether discounts, subscriptions and shipping options really change spending.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" alt="Problem and goal slide" width="750"> </p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" alt="Problem and goal slide" width="750">
+</p>
 
-Key questions
+**Key questions**
+- Do subscribers spend more than non-subscribers?
+- Which age groups and customers bring the most revenue?
+- Do discounts and shipping type affect spending?
+- How loyal are the customers?
 
-Do subscribers spend more than non-subscribers?
-Which age groups and customers bring the most revenue?
-Do discounts and shipping type affect spending?
-How loyal are the customers?
-Dataset
-Rows: 3,900 customers (one row per customer)
-Columns (18): customer_id, age, gender, item_purchased, category, purchase_amount_usd, location, size, color, season, review_rating, subscription_status, shipping_type, discount_applied, promo_code_used, previous_purchases, payment_method, frequency_of_purchases
-Missing values: 37 review ratings (about 1%)
-Source: add the source link here, for example Kaggle, or write "sample dataset"
+## Dataset
 
-Note: each row is one purchase per customer, so "revenue" here means one purchase per customer, not lifetime value.
+- **Rows:** 3,900 customers (one row per customer)
+- **Columns (18):** customer_id, age, gender, item_purchased, category, purchase_amount_usd, location, size, color, season, review_rating, subscription_status, shipping_type, discount_applied, promo_code_used, previous_purchases, payment_method, frequency_of_purchases
+- **Missing values:** 37 review ratings (about 1%)
+- **Source:** *add the source link here, for example Kaggle, or write "sample dataset"*
 
-Tools Used
-Tool	Purpose
-Python (pandas, matplotlib, seaborn)	Data cleaning, feature engineering, exploratory analysis
-SQL (PostgreSQL, pgAdmin 4)	Table design with constraints, analytical queries
-Power BI	Interactive dashboard
-Excel / CSV	Cleaned dataset formats
-Project Workflow
-Load and inspect the data (shape, data types, summary statistics, duplicates, missing values).
-Clean: filled the 37 missing review ratings with the median rating of each product category, and converted Yes/No columns to True/False.
-Feature engineering (Python):
-age_group: 18-25, 26-35, 36-45, 46-55, 56-65, 66+
-customer_segment: New (1 previous purchase), Returning (2-10), Loyal (11+)
-Analyse business questions in Python and SQL.
-Visualise the results in Power BI.
-Analysis Preview
+> Note: each row is one purchase per customer, so "revenue" here means one purchase per customer, not lifetime value.
 
-Python (Jupyter Notebook)
+## Tools Used
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" alt="Jupyter notebook analysis" width="800"> </p>
+| Tool | Purpose |
+|---|---|
+| **Python** (pandas, matplotlib, seaborn) | Data cleaning, feature engineering, exploratory analysis |
+| **SQL** (PostgreSQL, pgAdmin 4) | Table design with constraints, analytical queries |
+| **Power BI** | Interactive dashboard |
+| **Excel / CSV** | Cleaned dataset formats |
 
-SQL (pgAdmin 4)
+## Project Workflow
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" alt="SQL queries in pgAdmin" width="700"> </p>
-Business Questions Answered
+1. **Load and inspect** the data (shape, data types, summary statistics, duplicates, missing values).
+2. **Clean:** filled the 37 missing review ratings with the **median rating of each product category**, and converted Yes/No columns to True/False.
+3. **Feature engineering (Python):**
+   - `age_group`: 18-25, 26-35, 36-45, 46-55, 56-65, 66+
+   - `customer_segment`: New (1 previous purchase), Returning (2-10), Loyal (11+)
+4. **Analyse** business questions in Python and SQL.
+5. **Visualise** the results in Power BI.
 
-Python notebook (10 questions)
+## Analysis Preview
 
-Revenue by gender
-Discount users who spent at or above the average purchase
-Top 5 products by average review rating
-Average purchase: Standard vs Express shipping
-Subscribers vs non-subscribers (customers, average spend, total revenue)
-Top 5 products by discount rate
-Customer segment counts
-Top 3 products within each category
-Whether repeat buyers (more than 5 purchases) subscribe
-Revenue by age group
+**Python (Jupyter Notebook)**
 
-SQL (7 queries): row count, revenue by gender, discount users above average spend, top-rated products, Standard vs Express shipping, subscribers vs non-subscribers, and top discounted products.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" alt="Jupyter notebook analysis" width="800">
+</p>
 
-Key Findings
-Area	Finding
-Overall	Total revenue $233,081 · average purchase $59.76 · average rating 3.75
-Category	Clothing generates about 45% of revenue ($104,264), followed by Accessories ($74,200), Footwear ($36,093) and Outerwear ($18,524)
-Gender	Men $157,890 vs women $75,191. Average spend per purchase is nearly identical ($59.54 vs $60.25), so the gap comes from customer count, not spending
-Subscription	Subscribers (1,053) spend about the same as non-subscribers (2,847): $59.49 vs $59.87
-Repeat buyers	Of 3,476 customers with more than 5 previous purchases, 2,518 (about 72%) are not subscribed, which suggests a loyalty-program opportunity
-Shipping	Express averages $60.48 vs Standard $58.46
-Discounts	43% of purchases used a discount. Hat (50%), Sneakers (49.7%) and Coat (49.1%) are discounted most often
-Ratings	Top rated: Gloves 3.86, Sandals 3.84, Boots 3.82, Hat 3.80, T-shirt 3.78 (a narrow range)
-Age	The 46-55 group contributes the most revenue ($45.6K); 66+ the least ($20.9K)
-Segments	Loyal 3,116 · Returning 701 · New 83
-Dashboard
+**SQL (pgAdmin 4)**
 
-The Power BI dashboard (dashboard/customer_shopping_behaviour_analysis.pbix) includes:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" alt="SQL queries in pgAdmin" width="700">
+</p>
 
-KPI cards: Average Purchase Amount, Average Review Rating, Number of Customers
-Revenue by category and customer count by category
-Customers by review rating
-Subscription breakdown by season
-Slicers for subscription status, color and category
+## Business Questions Answered
 
-The preview image above is shown with filters applied (subscription = Yes, color = Beige), so its KPI values differ from the overall figures in the table.
+**Python notebook (10 questions)**
+1. Revenue by gender
+2. Discount users who spent at or above the average purchase
+3. Top 5 products by average review rating
+4. Average purchase: Standard vs Express shipping
+5. Subscribers vs non-subscribers (customers, average spend, total revenue)
+6. Top 5 products by discount rate
+7. Customer segment counts
+8. Top 3 products within each category
+9. Whether repeat buyers (more than 5 purchases) subscribe
+10. Revenue by age group
 
-Open the .pbix file with Power BI Desktop (free for Windows).
+**SQL (7 queries)**: row count, revenue by gender, discount users above average spend, top-rated products, Standard vs Express shipping, subscribers vs non-subscribers, and top discounted products.
 
-Repository Structure
+## Key Findings
+
+| Area | Finding |
+|---|---|
+| **Overall** | Total revenue $233,081 · average purchase $59.76 · average rating 3.75 |
+| **Category** | Clothing generates about 45% of revenue ($104,264), followed by Accessories ($74,200), Footwear ($36,093) and Outerwear ($18,524) |
+| **Gender** | Men $157,890 vs women $75,191. Average spend per purchase is nearly identical ($59.54 vs $60.25), so the gap comes from customer count, not spending |
+| **Subscription** | Subscribers (1,053) spend about the same as non-subscribers (2,847): $59.49 vs $59.87 |
+| **Repeat buyers** | Of 3,476 customers with more than 5 previous purchases, 2,518 (about 72%) are not subscribed, which suggests a loyalty-program opportunity |
+| **Shipping** | Express averages $60.48 vs Standard $58.46 |
+| **Discounts** | 43% of purchases used a discount. Hat (50%), Sneakers (49.7%) and Coat (49.1%) are discounted most often |
+| **Ratings** | Top rated: Gloves 3.86, Sandals 3.84, Boots 3.82, Hat 3.80, T-shirt 3.78 (a narrow range) |
+| **Age** | The 46-55 group contributes the most revenue ($45.6K); 66+ the least ($20.9K) |
+| **Segments** | Loyal 3,116 · Returning 701 · New 83 |
+
+## Dashboard
+
+The Power BI dashboard (`dashboard/customer_shopping_behaviour_analysis.pbix`) includes:
+- KPI cards: Average Purchase Amount, Average Review Rating, Number of Customers
+- Revenue by category and customer count by category
+- Customers by review rating
+- Subscription breakdown by season
+- Slicers for subscription status, color and category
+
+> The preview image above is shown with filters applied (subscription = Yes, color = Beige), so its KPI values differ from the overall figures in the table.
+
+Open the `.pbix` file with Power BI Desktop (free for Windows).
+
+## Repository Structure
+
+```
 customer-shopping-behavior-analysis/
 ├── data/
 │   ├── customer_shopping_behavior_clean.csv
@@ -101,30 +118,32 @@ customer-shopping-behavior-analysis/
 ├── sql/
 │   └── sql_que.sql
 ├── dashboard/
-│   ├── customer_shopping_behaviour_analysis.pbix
-│   └── Dashbord1.png
+│   └── customer_shopping_behaviour_analysis.pbix
 └── README.md
-How to Run
+```
 
-Python notebook
+## How to Run
 
-bash
+**Python notebook**
+```bash
 pip install pandas matplotlib seaborn jupyter
 jupyter notebook notebooks/shoppingData.ipynb
-
+```
 The notebook reads the dataset with a relative path. If you keep the folder layout above, change the load line to:
-
-python
+```python
 df = pd.read_csv("../data/customer_shopping_behavior_clean.csv")
+```
 
-SQL
+**SQL**
+1. Create a PostgreSQL database.
+2. Run `sql/sql_que.sql`. It creates the table, loads all 3,900 rows and runs the queries.
 
-Create a PostgreSQL database.
-Run sql/sql_que.sql. It creates the table, loads all 3,900 rows and runs the queries.
-Limitations
-The SQL queries use the raw ratings, so the 37 missing values stay NULL, while the Python analysis fills them with category medians. Rating results may differ slightly.
-Customer segmentation and the repeat-buyer analysis are done in Python only.
-The data has one purchase per customer, so trends over time and lifetime value cannot be measured.
-Author
+## Limitations
 
-Laxmi Gujar · LinkedIn · GitHub
+- The SQL queries use the raw ratings, so the 37 missing values stay NULL, while the Python analysis fills them with category medians. Rating results may differ slightly.
+- Customer segmentation and the repeat-buyer analysis are done in Python only.
+- The data has one purchase per customer, so trends over time and lifetime value cannot be measured.
+
+## Author
+
+**Laxmi Gujar** · [LinkedIn](https://www.linkedin.com/in/laxmi-g-gujar-287076245/) · [GitHub](https://github.com/LaxmiGujar)
