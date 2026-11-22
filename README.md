@@ -2,7 +2,8 @@ Customer Shopping Behavior Analysis
 
 End-to-end analysis of 3,900 retail customers using Python, SQL (PostgreSQL) and Power BI. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
 
-<p align="center"> <img src="dashboard/Dashbord1.png" alt="Power BI dashboard: Customer Shopping Behaviour Analysis" width="700"> </p>
+<p align="center"> <img src="dashboard/Dashbord1.pn<img width="332" height="194" alt="Dashbord1" src="https://github.com/user-attachments/assets/8eb30329-d028-4cf1-8b1c-faa435fa3126" />
+g" alt="Power BI dashboard: Customer Shopping Behaviour Analysis" width="700"> </p>
 Problem and Goal
 
 A retail store wants to understand who its customers are, what drives revenue, and whether discounts, subscriptions and shipping options really change spending.
