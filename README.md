@@ -2,13 +2,23 @@
 
 End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
 
-![Dashboard preview](dashboard/<img <img width="350" height="600" alt="Dashbord1" src="https://github.com/user-attachments/assets/3c3e0047-0eee-48a4-a61c-101186d4a77b" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8eb98637-4609-415d-bd93-5a2a5f060c0f" alt="Power BI dashboard: Customer Shopping Behaviour Analysis" width="800">
+</p>
 
-<img width="400" height="300" alt="Screenshot 2026-11-22 103346" src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" />
-<img width="400" height="3000" alt="Screenshot 2026-11-22 103820" src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" />
-<img width="400" height="300" alt="Screenshot 2026-11-22 103918" src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" />
+## Problem and Goal
 
-width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments/assets/8eb98637-4609-415d-bd93-5a2a5f060c0f" />.png)
+A retail store wants to understand who its customers are, what drives revenue, and whether discounts, subscriptions and shipping options really change spending.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" alt="Problem and goal slide" width="750">
+</p>
+
+**Key questions**
+- Do subscribers spend more than non-subscribers?
+- Which age groups and customers bring the most revenue?
+- Do discounts and shipping type affect spending?
+- How loyal are the customers?
 
 ## Dataset
 
@@ -24,7 +34,7 @@ width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments
 | Tool | Purpose |
 |---|---|
 | **Python** (pandas, matplotlib, seaborn) | Data cleaning, feature engineering, exploratory analysis |
-| **SQL** (PostgreSQL) | Table design with constraints, analytical queries |
+| **SQL** (PostgreSQL, pgAdmin 4) | Table design with constraints, analytical queries |
 | **Power BI** | Interactive dashboard |
 | **Excel / CSV** | Cleaned dataset formats |
 
@@ -37,6 +47,20 @@ width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments
    - `customer_segment`: New (1 previous purchase), Returning (2-10), Loyal (11+)
 4. **Analyse** business questions in Python and SQL.
 5. **Visualise** the results in Power BI.
+
+## Analysis Preview
+
+**Python (Jupyter Notebook)**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" alt="Jupyter notebook analysis" width="800">
+</p>
+
+**SQL (pgAdmin 4)**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" alt="SQL queries in pgAdmin" width="700">
+</p>
 
 ## Business Questions Answered
 
@@ -65,7 +89,7 @@ width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments
 | **Repeat buyers** | Of 3,476 customers with more than 5 previous purchases, 2,518 (about 72%) are not subscribed, which suggests a loyalty-program opportunity |
 | **Shipping** | Express averages $60.48 vs Standard $58.46 |
 | **Discounts** | 43% of purchases used a discount. Hat (50%), Sneakers (49.7%) and Coat (49.1%) are discounted most often |
-| **Ratings** | Top rated: Gloves 3.86, Sandals 3.84, Boots 3.82, Hat 3.80, Handbag 3.78 (a narrow range) |
+| **Ratings** | Top rated: Gloves 3.86, Sandals 3.84, Boots 3.82, Hat 3.80, T-shirt 3.78 (a narrow range) |
 | **Age** | The 46-55 group contributes the most revenue ($45.6K); 66+ the least ($20.9K) |
 | **Segments** | Loyal 3,116 · Returning 701 · New 83 |
 
@@ -73,10 +97,12 @@ width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments
 
 The Power BI dashboard (`dashboard/customer_shopping_behaviour_analysis.pbix`) includes:
 - KPI cards: Average Purchase Amount, Average Review Rating, Number of Customers
-- Revenue and customer count by category
-- Review rating distribution
+- Revenue by category and customer count by category
+- Customers by review rating
 - Subscription breakdown by season
 - Slicers for subscription status, color and category
+
+> The preview image above is shown with filters applied (subscription = Yes, color = Beige), so its KPI values differ from the overall figures in the table.
 
 Open the `.pbix` file with Power BI Desktop (free for Windows).
 
@@ -92,8 +118,7 @@ customer-shopping-behavior-analysis/
 ├── sql/
 │   └── sql_que.sql
 ├── dashboard/
-│   ├── customer_shopping_behaviour_analysis.pbix
-│   └── dashboard_preview.png
+│   └── customer_shopping_behaviour_analysis.pbix
 └── README.md
 ```
 
