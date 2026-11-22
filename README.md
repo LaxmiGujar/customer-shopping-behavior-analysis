@@ -2,11 +2,11 @@
 
 End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
 
-![Dashboard preview](dashboard/<img <img width="500" height="400" alt="Dashbord1" src="https://github.com/user-attachments/assets/3c3e0047-0eee-48a4-a61c-101186d4a77b" />
+![Dashboard preview](dashboard/<img <img width="350" height="600" alt="Dashbord1" src="https://github.com/user-attachments/assets/3c3e0047-0eee-48a4-a61c-101186d4a77b" />
 
-<img width="400" height="332" alt="Screenshot 2026-11-22 103346" src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" />
-<img width="300" height="299" alt="Screenshot 2026-11-22 103820" src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" />
-<img width="300" height="299" alt="Screenshot 2026-11-22 103918" src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" />
+<img width="400" height="300" alt="Screenshot 2026-11-22 103346" src="https://github.com/user-attachments/assets/4a10c630-44b4-4861-b73e-608e466a1571" />
+<img width="400" height="3000" alt="Screenshot 2026-11-22 103820" src="https://github.com/user-attachments/assets/c30c1c34-aacb-43fc-8278-66ea9556e890" />
+<img width="400" height="300" alt="Screenshot 2026-11-22 103918" src="https://github.com/user-attachments/assets/f6a25e75-235d-49ed-9509-81b7c80fdca6" />
 
 width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments/assets/8eb98637-4609-415d-bd93-5a2a5f060c0f" />.png)
 
