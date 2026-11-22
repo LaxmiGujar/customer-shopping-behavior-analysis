@@ -1,3 +1,8 @@
+<img width="344" height="200" alt="Screenshot 2026-11-21 204020" src="https://github.com/user-attachments/assets/8aa3a24f-eab8-47d8-98b5-3bdfd7ff8a8e" />
+<img width="332" height="194" alt="Screenshot 2026-11-22 102633" src="https://github.com/user-attachments/assets/407b463f-331d-409d-9911-afe981fed334" />
+<img width="511" height="279" alt="Screenshot 2026-11-22 103346" src="https://github.com/user-attachments/assets/7fac8128-19df-4239-966e-53f0a2256cc8" />
+<img width="383" height="299" alt="Screenshot 2026-11-22 103820" src="https://github.com/user-attachments/assets/feb04c62-77dc-43b4-9146-2681410c4d4c" />
+<img width="431" height="243" alt="Screenshot 2026-11-22 103918" src="https://github.com/user-attachments/assets/c7efcf21-57bb-4352-92fc-2586f326af0b" />
 # Customer Shopping Behavior Analysis
 
 End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
