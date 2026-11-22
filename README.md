@@ -2,7 +2,8 @@
 
 End-to-end analysis of **3,900 retail customers** using **Python, SQL (PostgreSQL) and Power BI**. The project cleans the data, builds customer segments, answers business questions on revenue, discounts, subscriptions, shipping and product ratings, and presents the results in an interactive dashboard.
 
-![Dashboard preview](dashboard/<img width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments/assets/8eb98637-4609-415d-bd93-5a2a5f060c0f" />.png)
+![Dashboard preview](dashboard/<img <img width="332" height="194" alt="Dashbord1" src="https://github.com/user-attachments/assets/3c3e0047-0eee-48a4-a61c-101186d4a77b" />
+width="344" height="200" alt="Dashbord" src="https://github.com/user-attachments/assets/8eb98637-4609-415d-bd93-5a2a5f060c0f" />.png)
 
 ## Dataset
 
